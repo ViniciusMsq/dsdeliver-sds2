@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = 'http://vinicius-msq-sds2.herokuapp.com';
+const API_URL = process.env.REACT_APP_API_URL;
 
 export function fetchOrders(){
     return axios(`${API_URL}/orders`);
